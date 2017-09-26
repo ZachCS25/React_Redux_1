@@ -12,7 +12,7 @@ const App = () => { // const is ES6 syntax for declaring a constant
       <SearchBar />
     </div>
   ); // JSX dialect of JS that allows HTMLish inside
-}  // App is a class, not an instance!!!
+}; // App is a class, not an instance!!!
    // this function is like a factory for producing instances to get rendered
    // => is ES6 for function keyword before the ()
 
