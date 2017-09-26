@@ -1,11 +1,17 @@
 import React from 'react'; // for creating new components
 import ReactDOM from 'react-dom'; // for adding component to DOM
 
-import YOUTUBE_API_KEY from './settings.js';
+import SearchBar from './components/search_bar';
+
+import YOUTUBE_API_KEY from './settings';
 
 // 1. create a new component that should produce some HTML
 const App = () => { // const is ES6 syntax for declaring a constant
-  return <div>Hi!</div>; // JSX dialect of JS that allows HTMLish inside
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  ); // JSX dialect of JS that allows HTMLish inside
 }  // App is a class, not an instance!!!
    // this function is like a factory for producing instances to get rendered
    // => is ES6 for function keyword before the ()
