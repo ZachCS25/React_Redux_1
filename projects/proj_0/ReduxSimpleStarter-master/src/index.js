@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom'; // for adding component to DOM
 
 import YOUTUBE_API_KEY from './settings.js';
 
-const API_KEY = "AIzaSyCnhY2oNKgBpth5o2ktznJ2L12tcg2QWFU";
-
 // 1. create a new component that should produce some HTML
 const App = () => { // const is ES6 syntax for declaring a constant
   return <div>Hi!</div>; // JSX dialect of JS that allows HTMLish inside
