@@ -1,7 +1,7 @@
 import React from 'react'; // for creating new components
 import ReactDOM from 'react-dom'; // for adding component to DOM
 
-import YOUTUBE_API_KEY from 'settings';
+import YOUTUBE_API_KEY from './settings.js';
 
 const API_KEY = "AIzaSyCnhY2oNKgBpth5o2ktznJ2L12tcg2QWFU";
 
