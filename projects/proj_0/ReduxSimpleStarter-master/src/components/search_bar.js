@@ -11,6 +11,14 @@ import React, { Component } from 'react';
 
 // class based component:
 class SearchBar extends Component {
+  // all JS classes have a constructor fired upon instance instantiation
+  constructor(props) {
+    // this is how to initialize state in a class-based component
+    super(props); // super is the constructor for Component (the superclass)
+    // we init state by creating a new obj and setting to this.state
+    // the object passed contains props that we want to record on the state
+    this.state = { term: '' }; // using term for searchTerm
+  }
   // every react component must have a render method
   // every render method must return some JSX
   render() {
@@ -22,7 +30,14 @@ class SearchBar extends Component {
     // return <input onChange={this.onInputChange} />;
 
     // below is ES6 shortcut adding the event handler
-    return <input onChange={event => console.log(event.target.value)} />;
+    // never modify state directly (USE SETTER!!!)
+    return (
+      <div>
+        <input
+          value={this.state.term}
+          onChange={event => this.setState({ term: event.target.value })} />
+      </div>
+    );
   }
 
   // our event handler for detecting text
